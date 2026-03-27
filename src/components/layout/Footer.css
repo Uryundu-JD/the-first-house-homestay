@@ -1,0 +1,119 @@
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  padding: var(--spacing-xl) 0 var(--spacing-md);
+  margin-top: auto; /* Push to bottom of page if content is short */
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.brand-col .brand-logo {
+  color: var(--color-accent);
+}
+
+.footer-desc {
+  color: var(--color-text-light);
+  opacity: 0.8;
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  max-width: 300px;
+  font-size: 0.95rem;
+}
+
+.social-links {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-surface);
+  transition: all var(--transition-fast);
+}
+
+.social-link:hover {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  transform: translateY(-3px);
+}
+
+.footer-heading {
+  color: var(--color-accent);
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-md);
+  font-family: var(--font-heading);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.footer-links a {
+  color: var(--color-text-light);
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  color: var(--color-accent);
+  padding-left: 5px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.contact-info li {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: flex-start;
+  color: var(--color-text-light);
+  opacity: 0.8;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.contact-icon {
+  color: var(--color-accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--spacing-md);
+  text-align: center;
+  color: var(--color-text-light);
+  opacity: 0.6;
+  font-size: 0.85rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+}
