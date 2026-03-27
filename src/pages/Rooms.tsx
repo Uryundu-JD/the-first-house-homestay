@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wifi, Coffee, Tv, Wind, Waves, Check } from 'lucide-react';
+import { Wifi, Coffee, Wind, Check } from 'lucide-react';
 import './Rooms.css';
 import roomBg from '../assets/hero.png';
 import unit1 from '../assets/u1.jpg';

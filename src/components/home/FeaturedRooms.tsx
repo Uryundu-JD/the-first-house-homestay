@@ -1,8 +1,6 @@
 import React from 'react';
 import './FeaturedRooms.css';
 import room from '../../assets/room.jpg'
-import { ArrowRight, Wifi, Coffee, Tv } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const rooms = [
   {

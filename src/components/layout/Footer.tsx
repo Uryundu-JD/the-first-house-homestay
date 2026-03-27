@@ -1,5 +1,5 @@
 import React from 'react';
-import { Camera, MessageSquare, Globe, MapPin, Phone, Mail } from 'lucide-react';
+import { Camera, MessageSquare, Globe, MapPin, Phone, } from 'lucide-react';
 import tfh_white from '../../assets/tfh_white.png'
 import tfh_logo from '../../assets/tfh_logo.png'
 import './Footer.css';
